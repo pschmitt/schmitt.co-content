@@ -1,6 +1,6 @@
 /*
-Title: Project
-Description: current and active projects
+Title: Projects
+Description: Current and active projects
 */
 
 You can find all my projects on [GitHub](https://github.com/pschmitt/ "pschmitt@GitHub").
