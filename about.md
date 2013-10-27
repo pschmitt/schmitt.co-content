@@ -7,7 +7,7 @@ Template: about
 
 # Philipp Schmitt
 
-Student, GNU/Linux enthousiast
+Student, GNU/Linux enthusiast 
 
     $ sed -e 's/<at>/@/;s/<dot>/./' <<< "philipp<at>schmitt<dot>co"
 
