@@ -5,7 +5,7 @@ Author: Philipp Schmitt
 Template: snippets
 */
 
-## Snippets by cathegory
+## Snippets by category
 
 * [OpenGL (C++)](http://schmitt.co/pico/tag/opengl "#opengl")
 * [QT (C++)](http://schmitt.co/pico/tag/qt "#qt")
