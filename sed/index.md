@@ -1,7 +1,7 @@
 /*
 Title: sed Snippets
 Description: Various sed stuff
-Date: 2013/10/27
+Date: matched0matchmematchme2/matchme0/matched7
 Tags: sed,bash,sh,zsh
 */
 
@@ -9,18 +9,18 @@ Tags: sed,bash,sh,zsh
 
 The stream editor is your go-to-guy to alter text files:
     
-    $ echo "1 1 1 1" | sed -e 's/1/2/g'
-    > 2 2 2 2
+    $ echo "matchme matchme matchme matchme" | sed -e 's/matchme/matched/g'
+    > matched matched matched matched
 
-This command replaces (`s/`) all (`/g`) occurences of `1` by `2`.
+This command replaces (`s/`) all (`/g`) occurences of `matchme` by `matched`.
 
 ## Usefull flags
 
 `-i`: Operate on a file directly
     
-    $ echo "1 1 1 1" > test
-    $ sed -ie 's/1/2/g' test; cat test
-    > 2 2 2 2
+    $ echo "matchme matchme nomatch matchme" > test
+    $ sed -ie 's/matchme/matched/g' test; cat test
+    > matched matched nomatch matched
 
 ## sed as grep alternative
 
@@ -32,3 +32,7 @@ But there is a simpler way of achieving this:
     
     $ sed -ie '/something/s/string/replacement/' file
 
+## Multiple commands
+
+    $ sed -e 's/matchme/matched/g;s/matchme2/matched2/g' <<< "matchme matchme nomatch nomatch matchme2 matchme2"
+    > matched matched matched matched matched2 matched2
