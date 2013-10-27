@@ -8,7 +8,8 @@ Navigation: yes
 
 ## Snippets by category
 
-* [OpenGL (C++)](http://schmitt.co/pico/tag/opengl "#opengl")
-* [QT (C++)](http://schmitt.co/pico/tag/qt "#qt")
-* [wxWidgets (C++)](http://schmitt.co/pico/tag/wxwidgets "#wxwidgets")
-* [Shell (Bash, ZSH)](http://schmitt.co/pico/tag/sh "#sh")
+* [OpenGL (C++)](%base_url%/tag/opengl "#opengl")
+* [QT (C++)](%base_url%/tag/qt "#qt")
+* [wxWidgets (C++)](%base_url%/tag/wxwidgets "#wxwidgets")
+* [Shell (Bash, ZSH)](%base_url%/tag/sh "#sh")
+
