@@ -1,5 +1,5 @@
 /*
-Title: Git Tips&Tricks
+Title: Git Tips&amp;Tricks
 Description: Various Git Tips 
 Author: Philipp Schmitt
 Date: 2013/10/26
