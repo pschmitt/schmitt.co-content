@@ -9,6 +9,8 @@ Template: about
 
 Student, GNU/Linux enthousiast
 
+    $ sed -e 's/<at>/@/;s/<dot>/./' <<< "philipp<at>schmitt<dot>co"
+
 # Social Media (Stalk me !)
 
 * [GitHub](https://www.github.com/pschmitt) 
