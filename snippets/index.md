@@ -3,6 +3,7 @@ Title: Snippets
 Description: Misc code excerpts 
 Author: Philipp Schmitt
 Template: snippets
+Navigation: yes
 */
 
 ## Snippets by category

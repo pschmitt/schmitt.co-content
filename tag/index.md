@@ -3,7 +3,6 @@ Title: Tags
 Description: All tags 
 Author: Philipp Schmitt
 Template: tags 
-Exclude: yes 
 */
 
 ## Tags

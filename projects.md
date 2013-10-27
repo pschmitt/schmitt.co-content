@@ -1,6 +1,7 @@
 /*
 Title: Projects
 Description: Current and active projects
+Navigation: yes
 */
 
 You can find all my projects on [GitHub](https://github.com/pschmitt/ "pschmitt@GitHub").

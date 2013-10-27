@@ -3,6 +3,7 @@ Title: About
 Description: Info about the author
 Author: Philipp Schmitt
 Template: about
+Navigation: yes
 */
 
 # Philipp Schmitt
