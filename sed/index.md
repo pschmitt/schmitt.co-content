@@ -34,5 +34,5 @@ But there is a simpler way of achieving this:
 
 ## Multiple commands
 
-    $ sed -e 's/matchme/matched/g;s/matchme2/matched2/g' <<< "matchme matchme nomatch nomatch matchme2 matchme2"
-    > matched matched matched matched matched2 matched2
+    $ sed -e 's/matchme/matched/g;s/match2/matched2/g' <<< "matchme matchme nomatch nomatch match2 match2"
+    > matched matched nomatch nomatch matched2 matched2 
