@@ -1,7 +1,7 @@
 /*
 Title: sed Snippets
 Description: Various sed stuff
-Date: matched0matchmematchme2/matchme0/matched7
+Date: 2013/10/27 
 Tags: sed,bash,sh,zsh
 */
 
