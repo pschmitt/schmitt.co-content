@@ -9,7 +9,7 @@ So here I will be sharing some commands I often use myself.
 
 For an exhaustive list, see [grml.org](http://grml.org/zsh/zsh-lovers.html "grml.org | zsh-lovers")
 
-## BangBang !
+## BangBang!
 
     # touch test; exit
     $ echo "test" > test
@@ -36,10 +36,10 @@ For an exhaustive list, see [grml.org](http://grml.org/zsh/zsh-lovers.html "grml
 
     $ cat <<EOM > test; cat test
     heredoc>okay
-    heredoc>now stop !
+    heredoc>now stop!
     heredoc>EOM
     > okay
-    > now stop !
+    > now stop!
 
 `EOM` (End Of Message) is just a _randomly_ chosen stop parameter. Just remember: do not put a space char after `<<`.
  
