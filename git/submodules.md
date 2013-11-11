@@ -19,9 +19,10 @@ Note that `${DIRECTORY}` is optional but comes in handy if you want to add a rep
 
 ## Remove a submodule
 
+    $ git submodule deinit ${submodule_path}
     $ git rm ${submodule_path}  
 
-If you are using Git 1.8.5+ this should be it. If your are stuck with an older version, you may need to manually edit `.gitmodules` and remove the line corresponding to the submodule you want to remove.
+If you are using Git 1.8+ this should be it. If your are stuck with an older version, you may need to manually edit `.gitmodules` and remove the line corresponding to the submodule you want to remove.
 
 ## Clone including submodules
 
