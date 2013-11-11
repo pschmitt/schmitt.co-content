@@ -25,7 +25,7 @@ Then you need to add `Include conf/extra/httpd-vhosts.conf` to your apache confi
         ServerName  sub.schmitt.co 
     </VirtualHost> 
 
-This defines a subdomain whose server root is located at `/srv/http/subdomain`.
+This defines a subdomain whose root is located at `/srv/http/subdomain`.
 
 In order to make our server aware of this subdomain one last step is necessary, namely an entry in `/etc/hosts`:
 
