@@ -1,5 +1,5 @@
 /*
-Title: GitHub Import SSH keys from remote server
+Title: GitHub: Import SSH keys from remote server
 Description: Import SSH keys from remote server
 Date: 2013/11/11
 Author: Philipp Schmitt
