@@ -6,7 +6,7 @@ Author: Philipp Schmitt
 Tags: apache,virtualhost
 */
 
-# Define subdomains (ArchLinux)
+## Define subdomains (ArchLinux)
 
 In order to add a subdomain, you gotta start off with editing your DNS settings by adding an A Record pointing to your domain, like:
     
