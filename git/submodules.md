@@ -33,9 +33,11 @@ will do the job.
 
 # Update all submodules
 
-    $ git pull
-    $ git submodule update --init --recursive
-    $ git submodule foreach --recursive git fetch
+Let's update all submodules at once. Note that in this example, we will assume we want to retrieve updates from the `master` branch of each submodule.
+
+    $ git pull                                # Update main repo
+    $ git submodule update --init --recursive # Init submodules
+    $ git submodule foreach --recursive "git checkout master; git pull" 
 
 # Pushing to a submodule
 
