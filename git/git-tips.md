@@ -3,7 +3,7 @@ Title: Git Tips&amp;Tricks
 Description: Various Git Tips 
 Author: Philipp Schmitt
 Date: 2013/10/26
-Tags: git,github,submodule
+Tags: git,github
 */
 
 In this post, I will go over a few FAQs about Git. I'm an ArchLinux user, so I'm using the very latest stable Git (1.8.4 as I am writing this). Keep this in mind as some of the listed commands may not work with older versions.
