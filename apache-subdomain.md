@@ -6,6 +6,8 @@ Author: Philipp Schmitt
 Tags: apache,virtualhost
 */
 
+Everybody loves subdomains, but how do you set them up ?
+
 ## Define subdomains (ArchLinux)
 
 In order to add a subdomain, you gotta start off with editing your DNS settings by adding an A Record pointing to your domain, like:
@@ -17,12 +19,12 @@ Then you need to add `Include conf/extra/httpd-vhosts.conf` to your apache confi
 
     <VirtualHost *:80>
         DocumentRoot "/srv/http/schmitt.co"
-        ServerName schmitt.co
+        ServerName   schmitt.co
     </VirtualHost>
 
     <VirtualHost *:80>
         DocumentRoot "/srv/http/sub.schmitt.co"
-        ServerName  sub.schmitt.co 
+        ServerName   sub.schmitt.co 
     </VirtualHost> 
 
 This defines a subdomain whose root is located at `/srv/http/subdomain`.
@@ -38,3 +40,17 @@ In order to make our server aware of this subdomain one last step is necessary, 
     ::1             localhost.localdomain   localhost
     127.0.0.1       schmitt.co    
     127.0.0.1       sub.schmitt.co
+
+## Per subdomain config
+
+Now that we have defined our subdomain we may want to edit the corresponding apache options. This can be done easily by adding a `Directory` section to `httpd-vhosts.conf`. Let's say we want to enable caching on our subdomain:
+
+    <VirtualHost *:80>
+        DocumentRoot "/srv/http/sub.schmitt.co"
+        ServerName  sub.schmitt.co 
+        <Directory /srv/http/sub.schmitt.co>
+            ExpiresActive On
+            ExpiresDefault "access plus 1 hour"
+        </Directory>
+    </VirtualHost>
+
