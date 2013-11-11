@@ -12,7 +12,7 @@ Student, GNU/Linux enthusiast
 
     $ sed -e 's/<at>/@/;s/<dot>/./' <<< "philipp<at>schmitt<dot>co"
 
-# Social Media (Stalk me !)
+## Social Media (Stalk me !)
 
 * [GitHub](https://www.github.com/pschmitt) 
 * [Google+](https://plus.google.com/u/0/111748235994603810778/posts) 
