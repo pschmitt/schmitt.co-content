@@ -11,19 +11,19 @@ If you do not know what this is read [this](http://git-scm.com/book/en/Git-Tools
 
 **TL;DR**: Submodules are _somehow_ Git's equivalent to SVN externals 
 
-# Add a new submodule
+## Add a new submodule
 
     $ git submodule add ${URL} ${DIRECTORY}
 
 Note that `${DIRECTORY}` is optional but comes in handy if you want to add a repo to a folder that has a different name than the said repo.
 
-# Remove a submodule
+## Remove a submodule
 
     $ git rm ${submodule_path}  
 
 If you are using Git 1.8.5+ this should be it. If your are stuck with an older version, you may need to manually edit `.gitmodules` and remove the line corresponding to the submodule you want to remove.
 
-# Clone including submodules
+## Clone including submodules
 
 By default, `git clone` does not clone submodules. If you wish to do this, a simple...
 
@@ -31,7 +31,7 @@ By default, `git clone` does not clone submodules. If you wish to do this, a sim
 
 will do the job.
 
-# Update all submodules
+## Update all submodules
 
 Let's update all submodules at once. Note that in this example, we will assume we want to retrieve updates from the `master` branch of each submodule.
 
@@ -39,7 +39,7 @@ Let's update all submodules at once. Note that in this example, we will assume w
     $ git submodule update --init --recursive # Init submodules
     $ git submodule foreach --recursive "git checkout master; git pull" 
 
-# Pushing to a submodule
+## Pushing to a submodule
 
 Well, first off make sure you initialized your submodules (`git submodule init`) and that you are on a branch:
     
@@ -53,7 +53,7 @@ In this case we are not on a branch. Don't panic we can make this right with:
 
 Obviously you need to adjust `master` to the branch you want to check out.
 
-# Forgot to checkout a branch ?
+## Forgot to checkout a branch ?
 
 Sh!t happens, luckily enough you won't lose anything if you do a checkout. Remember to commit your changes though.
 
@@ -64,7 +64,7 @@ Sh!t happens, luckily enough you won't lose anything if you do a checkout. Remem
     $ git cherry-pick c92741d
     $ git push
 
-# SSH vs. HTTPS
+## SSH vs. HTTPS
 
 Submodules are great, but when it comes to sharing stuff with other people on GitHub, things may get tricky. As you may know, the _HTTPS_ protocol allows anonymous clones, but _SSH_ relies on key authentification. Dilemma: should I use _HTTPS_ for *ALL* my submodules, even if this requires password:username input for every `git push` ? Should I set a *huge* timeout for HTTPS Auth ?
 
