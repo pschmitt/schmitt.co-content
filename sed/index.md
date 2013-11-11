@@ -22,7 +22,7 @@ This command replaces (`s/`) all (`/g`) occurences of `matchme` by `matched`.
     $ sed -ie 's/matchme/matched/g' test; cat test
     > matched matched nomatch matched
 
-## sed as grep alternative
+## sed as a grep alternative
 
 Most people would simply pipe grep's output into sed for further processing, like this: 
     
