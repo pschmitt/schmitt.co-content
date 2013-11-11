@@ -9,7 +9,7 @@ You can find all my projects on [GitHub](https://github.com/pschmitt/ "pschmitt@
 Currently I am working on:
 
 * [this site](https://github.com/pschmitt/schmitt.co "GitHub/schmitt.co")
-* [KeyringDroid](https://github.com/pschmitt/KeyringDroid "GitHub/KeyringDroid"): An Android App to manage your Gnome Keyring password
+* [KeyringDroid](https://github.com/pschmitt/KeyringDroid "GitHub/KeyringDroid"): An Android App to manage Gnome Keyring passwords
 
 
 I am also an ArchLinux package maintainer ([AUR contributions](https://aur.archlinux.org/packages/?SeB=m&K=pschmitt "AUR/pschmitt")):
