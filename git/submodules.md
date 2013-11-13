@@ -40,6 +40,17 @@ Let's update all submodules at once. Note that in this example, we will assume w
     $ git submodule update --init --recursive # Init submodules
     $ git submodule foreach --recursive "git checkout master; git pull" 
 
+## Inititalize and update a specific submodule
+
+When dealing with larger projects, fetching all submodules at one may take some time. And maybe you don't need to update them all at once.
+
+    $ git submodule init ${desired_submodule}   # init
+    $ git submodule update ${desired_submodule} # update
+
+If you want to initialize **AND** update the said submodule this single command will do the same as above:
+
+    $ git submodule update --init ${desired_submodule}
+
 ## Pushing to a submodule
 
 Well, first off make sure you initialized your submodules (`git submodule init`) and that you are on a branch:
