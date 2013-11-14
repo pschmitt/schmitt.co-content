@@ -3,7 +3,7 @@ Title: GitHub: Import SSH keys from remote server
 Description: Import SSH keys from remote server
 Date: 2013/11/11
 Author: Philipp Schmitt
-Tags: ssh,git,github
+Tags: git,github,ssh
 */
 
 Using `xsel`:
