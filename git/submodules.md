@@ -13,14 +13,14 @@ If you do not know what this is read [this](http://git-scm.com/book/en/Git-Tools
 
 ## Add a new submodule
 
-    $ git submodule add ${URL} ${DIRECTORY}
+    git submodule add ${URL} ${DIRECTORY}
 
 Note that `${DIRECTORY}` is optional but comes in handy if you want to add a repo to a folder that has a different name than the said repo.
 
 ## Remove a submodule
 
-    $ git submodule deinit ${submodule_path}
-    $ git rm ${submodule_path}  
+    git submodule deinit ${submodule_path}
+    git rm ${submodule_path}  
 
 If you are using Git 1.8+ this should be it. If your are stuck with an older version, you may need to manually edit `.gitmodules` and remove the line corresponding to the submodule you want to remove.
 
@@ -28,7 +28,7 @@ If you are using Git 1.8+ this should be it. If your are stuck with an older ver
 
 By default, `git clone` does not clone submodules. If you wish to do this, a simple...
 
-    $ git clone --recursive ${REPO}
+    git clone --recursive ${REPO}
 
 will do the job.
 
@@ -36,32 +36,32 @@ will do the job.
 
 Let's update all submodules at once. Note that in this example, we will assume we want to retrieve updates from the `master` branch of each submodule.
 
-    $ git pull                                # Update main repo
-    $ git submodule update --init --recursive # Init submodules
-    $ git submodule foreach --recursive "git checkout master; git pull" 
+    git pull                                # Update main repo
+    git submodule update --init --recursive # Init submodules
+    git submodule foreach --recursive "git checkout master; git pull" 
 
 ## Inititalize and update a specific submodule
 
 When dealing with larger projects, fetching all submodules at one may take some time. And maybe you don't need to update them all at once.
 
-    $ git submodule init ${desired_submodule}   # init
-    $ git submodule update ${desired_submodule} # update
+    git submodule init ${desired_submodule}   # init
+    git submodule update ${desired_submodule} # update
 
 If you want to initialize **AND** update the said submodule this single command will do the same as above:
 
-    $ git submodule update --init ${desired_submodule}
+    git submodule update --init ${desired_submodule}
 
 ## Pushing to a submodule
 
 Well, first off make sure you initialized your submodules (`git submodule init`) and that you are on a branch:
     
-    $ cd ${submodule}
-    $ git status
+    cd ${submodule}
+    git status
     > # HEAD detached at 5ff339b
 
 In this case we are not on a branch. Don't panic we can make this right with:
 
-    $ git checkout master
+    git checkout master
 
 Obviously you need to adjust `master` to the branch you want to check out.
 
@@ -69,12 +69,12 @@ Obviously you need to adjust `master` to the branch you want to check out.
 
 Sh!t happens, luckily enough you won't lose anything if you do a checkout. Remember to commit your changes though.
 
-    $ git commit -am "Awesome new feature"
+    git commit -am "Awesome new feature"
     > [detached HEAD c92741d] Awesome new feature
     >  1 file changed, 1 deletion(-)
-    $ git checkout master
-    $ git cherry-pick c92741d
-    $ git push
+    git checkout master
+    git cherry-pick c92741d
+    git push
 
 ## SSH vs. HTTPS
 

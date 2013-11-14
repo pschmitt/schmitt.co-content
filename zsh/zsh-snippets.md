@@ -11,30 +11,30 @@ For an exhaustive list, see [grml.org](http://grml.org/zsh/zsh-lovers.html "grml
 
 ## BangBang!
 
-    # touch test; exit
-    $ echo "test" > test
+    sudo touch test
+    echo "test" > test
     > zsh: permission denied: test
-    $ sudo !!; cat test
+    sudo !!; cat test
  
 ## Repeat last argument
 
-    $ touch "very long filename That You Do Not wanna repeat"
-    $ echo "test" > !$; cat !$
+    touch "very long filename That You Do Not wanna repeat"
+    echo "test" > !$; cat !$
     > test
 
 ## Redirect stdout with sudo
 
-    # touch test; exit
-    $ echo "test" > test
+    sudo touch test; exit
+    echo "test" > test
     > zsh: permission denied: test
-    $ sudo !!
+    sudo !!
     > zsh: permission denied: test
-    $ sudo su -c 'echo "test" > test'; cat test
+    sudo su -c 'echo "test" > test'; cat test
     > test
 
 ## Heredoc to file
 
-    $ cat <<EOM > test; cat test
+    cat <<EOM > test; cat test
     heredoc>okay
     heredoc>now stop!
     heredoc>EOM

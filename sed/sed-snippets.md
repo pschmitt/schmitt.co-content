@@ -9,7 +9,7 @@ Tags: sed,bash,sh,zsh
 
 The stream editor is your go-to-guy to alter text files:
     
-    $ echo "matchme matchme matchme matchme" | sed -e 's/matchme/matched/g'
+    echo "matchme matchme matchme matchme" | sed -e 's/matchme/matched/g'
     > matched matched matched matched
 
 This command replaces (`s/`) all (`/g`) occurences of `matchme` by `matched`.
@@ -18,21 +18,22 @@ This command replaces (`s/`) all (`/g`) occurences of `matchme` by `matched`.
 
 `-i`: Operate on a file directly
     
-    $ echo "matchme matchme nomatch matchme" > test
-    $ sed -ie 's/matchme/matched/g' test; cat test
+    echo "matchme matchme nomatch matchme" > test
+    sed -ie 's/matchme/matched/g' test; cat test
     > matched matched nomatch matched
 
 ## sed as a grep alternative
 
 Most people would simply pipe grep's output into sed for further processing, like this: 
     
-    $ grep something file | sed -e 's/string/replacement/' > file
+    grep something file | sed -e 's/string/replacement/' > file
 
 But there is a simpler way of achieving this:
     
-    $ sed -ie '/something/s/string/replacement/' file
+    sed -ie '/something/s/string/replacement/' file
 
 ## Multiple commands
 
-    $ sed -e 's/matchme/matched/g;s/match2/matched2/g' <<< "matchme matchme nomatch nomatch match2 match2"
+    sed -e 's/matchme/matched/g;s/match2/matched2/g' <<< "matchme matchme nomatch nomatch match2 match2"
     > matched matched nomatch nomatch matched2 matched2 
+
