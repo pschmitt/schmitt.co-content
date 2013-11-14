@@ -25,7 +25,7 @@ My website's files reside in a [GitHub repo](https://github.com/pschmitt/schmitt
 
 ### Security
 
-You should definetly do some IP filtering since without anyone who knows the WebHook URL could request a pull. You can get the IPs on the WebHook settings page:
+You should definitely do some IP filtering since without anyone who knows the WebHook URL could request a pull. You can get the IPs on the WebHook settings page:
 
 ![GitHub WebHook URLs Screenshot](./content/img/github-webhook-urls.png)
 
