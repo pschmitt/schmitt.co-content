@@ -21,13 +21,13 @@ Twig templates are easy to dig in too.
 
 My website's files reside in a [GitHub repo](https://github.com/pschmitt/schmitt.co/ "GitHub - schmitt.co"). There I defined a webhook so that each time I push to the main repo a PHP script that resides on my root server gets called. The said script executes a recursive pull of the repository holding my pages. The setup couldn't be easier just go to the settings of the repo, under "Service Hooks" select "WebHook URL" and enter your URL:
 
-![GitHub WebHook Screenshot](./content/img/gihub-webhook.png)
+![GitHub WebHook Screenshot](%base_url%/content/howto-blog/img/gihub-webhook.png)
 
 ### Security
 
 You should definitely do some IP filtering since without anyone who knows the WebHook URL could request a pull. You can get the IPs on the WebHook settings page:
 
-![GitHub WebHook URLs Screenshot](./content/img/github-webhook-urls.png)
+![GitHub WebHook URLs Screenshot](%base_url%/content/howto-blog/img/github-webhook-urls.png)
 
 Otherwise adding a `GET` variable check could add an extra layer of security. Yep, that's the part of the URL I blurred. Sorry hackers.
 
