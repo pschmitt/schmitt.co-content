@@ -14,7 +14,7 @@ Currently I am working on:
 
 I am also an ArchLinux package maintainer ([AUR contributions](https://aur.archlinux.org/packages/?SeB=m&K=pschmitt "AUR/pschmitt")):
 
-* [DialogBlocks](https://github.com/pschmitt/dialogblocks "GitHub/dialogblocks"): A *commercial* wxWidget IDE
-* [G9XLed](https://github.com/pschmitt/g9xled "GitHub/g9xled"): A tool to control the LEDs of a Logitech G9X
-* [python2-g9xled](https://github.com/pschmitt/python2-g9led "GitHub/python2-g9xled"): Same as above, also supports the original G9 (Python 2)
-* [Phoebetria](https://github.com/pschmitt/phoebetria "GitHub/Phoebetria"): Software controller for the Bitfenix Recon
+* [DialogBlocks](https://github.com/pschmitt/aur-dialogblocks "GitHub/aur-dialogblocks"): A *commercial* wxWidget IDE
+* [G9XLed](https://github.com/pschmitt/aur-g9xled "GitHub/aur-g9xled"): A tool to control the LEDs of a Logitech G9X
+* [python2-g9xled](https://github.com/pschmitt/aur-python2-g9led "GitHub/aur-python2-g9xled"): Same as above, also supports the original G9 (Python 2)
+* [Phoebetria](https://github.com/pschmitt/aur-phoebetria "GitHub/aur-hoebetria"): Software controller for the Bitfenix Recon
