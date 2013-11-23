@@ -10,7 +10,7 @@ Navigation: yes
 
 Student, GNU/Linux enthusiast 
 
-    $ sed -e 's/<at>/@/;s/<dot>/./' <<< "philipp<at>schmitt<dot>co"
+    sed -e 's/<at>/@/;s/<dot>/./' <<< "philipp<at>schmitt<dot>co"
 
 ## Social Media (Stalk me !)
 
