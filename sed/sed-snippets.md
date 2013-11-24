@@ -58,7 +58,7 @@ Prepending could be done with a little trick, like:
     cat file.prepend file.orig > file
     rm file.prepend file.orig
 
-There may be a slightly shorter version but that's still a lot a commands! Using sed it's much shorter:
+There may be a slightly shorter version but that's still a lot a commands! Using `sed` it's much shorter:
 
     sed -i "1i prepend this to file" file
 
