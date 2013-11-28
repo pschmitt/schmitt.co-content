@@ -17,6 +17,7 @@ Currently I am working on:
 
 I am also an ArchLinux package maintainer ([AUR contributions](https://aur.archlinux.org/packages/?SeB=m&K=pschmitt "AUR/pschmitt")):
 
+* [xrdr](https://github.com/pschmitt/xrdr "GitHub/xrdr"): A simple XrandR wrapper (Bash)
 * [pilight](https://github.com/pschmitt/aur-pilight "GitHub/pilight"): Modular domotica with the Raspberry Pi (433.92Mhz) - [Git Version](https://github.com/pschmitt/aur-pilight-git "GitHub/pilight-git")
 * [Monogame addin](https://github.com/pschmitt/aur-monodevelop-monogame-addin-git "GitHub/monodevelop-monogame-addin-git"): The [Monogame](http://monogame.codeplex.com/ "Monogame homepage") addin for [Monodevelop](http://monodevelop.com/ "Monodevelop homepage")
 * [DialogBlocks](https://github.com/pschmitt/dialogblocks "GitHub/dialogblocks"): A *commercial* wxWidget IDE
