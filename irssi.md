@@ -3,6 +3,7 @@ Title: irssi cap_sasl dependency
 Description: The right package to install to get the ssl script to work in irssi
 Date: 2013/11/22
 Author: Philipp Schmitt
+Tags: irssi,perl,archlinux
 */
 
 ## The issue
