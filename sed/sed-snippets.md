@@ -22,6 +22,8 @@ This command replaces (`s/`) all (`/g`) occurences of `matchme` by `matched`.
     sed -ie 's/matchme/matched/g' test; cat test
     > matched matched nomatch matched
 
+`-n`: Do not print output (quiet mode) 
+
 ## sed as a grep alternative
 
 Most people would simply pipe grep's output into sed for further processing, like this: 
@@ -32,8 +34,31 @@ But there is a simpler way of achieving this:
     
     sed -ie '/something/s/string/replacement/' file
 
+Mimicking `grep`'s behaviour without "harming" any file can be done using:
+
+    sed -n '/string/p' file
+
+Which will "grep" for `string` in `file`.
+
 ## Multiple commands
 
     sed -e 's/matchme/matched/g;s/match2/matched2/g' <<< "matchme matchme nomatch nomatch match2 match2"
     > matched matched nomatch nomatch matched2 matched2 
+
+## Prepend
+
+Appending to a file is pretty straight-forward in standard shell:
+
+    echo "append this to file" >> file
+
+Prepending could be done with a little trick, like:
+    
+    mv file file.orig
+    echo "prepend this to file" > file.prepend
+    cat file.prepend file.orig > file
+    rm file.prepend file.orig
+
+There may be a slightly shorter version but that's still a lot a commands! Using `sed` it's much shorter:
+
+    sed -i "1i prepend this to file" file
 
