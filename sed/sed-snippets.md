@@ -2,6 +2,8 @@
 Title: sed Snippets
 Description: Various sed stuff
 Date: 2013/10/27 
+Updated: 2013/12/21
+Author: Philipp Schmitt
 Tags: sed,bash,sh,zsh
 */
 
@@ -62,3 +64,8 @@ There may be a slightly shorter version but that's still a lot a commands! Using
 
     sed -i "1i prepend this to file" file
 
+### Get lines X to Y
+
+This is a nice one. The example prints out lines 12-45 from `file`.
+
+    sed -n '12,45p' file
