@@ -2,6 +2,7 @@
 Title: ZSH Snippets
 Description: Various ZSH stuff
 Date: 2013/10/27
+Author: Philipp Schmitt
 Tags: bash,sh,zsh
 */
 
