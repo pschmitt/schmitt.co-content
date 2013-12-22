@@ -6,7 +6,7 @@ Author: Philipp Schmitt
 Tags: opengl,glut,c++
 */
 
-### Get window size (GLUT)
+## Get window size (GLUT)
     glutGet(GLUT_WINDOW_WIDTH)
     glutGet(GLUT_WINDOW_HEIGHT) 
 

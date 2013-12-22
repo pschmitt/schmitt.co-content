@@ -6,7 +6,7 @@ Template: about
 Navigation: yes
 */
 
-## Philipp Schmitt
+# Philipp Schmitt
 
 Student, GNU/Linux enthusiast
 
