@@ -64,7 +64,7 @@ There may be a slightly shorter version but that's still a lot a commands! Using
 
     sed -i "1i prepend this to file" file
 
-### Get lines X to Y
+## Get lines X to Y
 
 This is a nice one. The example prints out lines 12-45 from `file`.
 
