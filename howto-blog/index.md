@@ -35,7 +35,7 @@ Otherwise adding a `GET` variable check could add an extra layer of security. Ye
 
 ## Alternative
 
-
+If you don't plan on pseudo-hosting your website on GitHub like I do, you should take a look at [codeforest's post](http://www.codeforest.net/pico-cms-and-draft "Pico CMS and Draft – awesome blogging solution") on integrating Draft with Pico.
 
 ## Mobile
 
