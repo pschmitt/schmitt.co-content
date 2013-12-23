@@ -2,6 +2,7 @@
 Title: Howto Blog
 Description: My workflow and how this site works
 Date: 2013/11/15
+Updated: 2013/12/23
 Tags: blog,github,hosting
 */
 
@@ -9,13 +10,15 @@ Don't get confused by the buzzy title, this post isn't about SEO or anything rel
 
 ## The backend
 
-[Pico CMS](http://pico.dev7studios.com "PICO") is a simple, flat content-management system. "Y U no use wordpress?" you may ask, well... Wordpress relies on a database engine (mysql/mariadb, sqlite etc.) and since there is no GitHub-equivalent that does DB-Versioning it doesn't fit my needs.
+[Pico](http://pico.dev7studios.com "Pico's homepage") is a simple, flat content-management system. "Y U no use wordpress?" you may ask, well... Wordpress relies on a database engine (mysql/mariadb, sqlite etc.) and since there is no GitHub-equivalent that does DB-Versioning it doesn't fit my needs.
 Performance may be a disadvantage but since I do not intend to host thousands of posts here it isn't a real problem for me (but this may change - stay tuned).
-Twig templates are easy to dig in too.
+[Twig templates](http://twig.sensiolabs.org/ "Twig's homepage") are easy to dig in too.
 
 ## The hoster
 
-@Hetzner
+[Hetzner](http://hetzner.de "Hetzner homepage") offers great deals on root server, especially on their [bidding site](https://robot.your-server.de/order/market "Hetzner robot bidding") where you can get a dedicated server for as low as 23€/month. They don't support ArchLinux installations, but I've got [a fix for that](https://github.com/pschmitt/hetzner-arch "Install ArchLinux on a Hetzner root server").
+
+_PS: Nope this isn't a sponsored post._
 
 ## The flow
 
@@ -31,9 +34,13 @@ You should definitely do some IP filtering since without anyone who knows the We
 
 Otherwise adding a `GET` variable check could add an extra layer of security. Yep, that's the part of the URL I blurred. Sorry hackers.
 
+## Alternative
+
+
+
 ## Mobile
 
-It's 2013, so how do I blog from my smartphone?
+It's <del>2013</del> 2014, so how do I blog from my smartphone?
 
 * [SGit](https://play.google.com/store/apps/details?id=me.sheimi.sgit "Play Store - SGit") 
 * [Vim Touch](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch "Play Store - Vim Touch")
