@@ -2,6 +2,7 @@
 Title: Howto Blog
 Description: My workflow and how this site works
 Date: 2013/12/23
+Author: Philipp Schmitt
 Tags: blog,github,hosting
 */
 
