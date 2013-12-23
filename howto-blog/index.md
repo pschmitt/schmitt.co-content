@@ -1,8 +1,7 @@
 /*
 Title: Howto Blog
 Description: My workflow and how this site works
-Date: 2013/11/15
-Updated: 2013/12/23
+Date: 2013/12/23
 Tags: blog,github,hosting
 */
 
