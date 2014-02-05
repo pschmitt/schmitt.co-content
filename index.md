@@ -1,9 +1,7 @@
 /*
-Title: Welcome
+Title: Blog 
 Description: home page 
 Author: Philipp Schmitt
+Template: home
 */
 
-## Welcome to schmitt.co
-
-Here you will find some cool snippets
