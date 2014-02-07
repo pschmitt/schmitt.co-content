@@ -1,7 +1,8 @@
 /*
 Title: sed Snippets
 Description: Various sed stuff
-Date: 2013/10/27 
+Date: 2013/10/28 
+Original Date: 2013/10/27 
 Updated: 2013/12/21
 Author: Philipp Schmitt
 Tags: sed,bash,sh,zsh

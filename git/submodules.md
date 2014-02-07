@@ -2,7 +2,8 @@
 Title: Git submodules 
 Description: Howto Git submodules 
 Author: Philipp Schmitt
-Date: 2013/11/11
+Date: 2013/11/13
+Original Date: 2013/11/11
 Tags: git,github,submodule
 */
 
