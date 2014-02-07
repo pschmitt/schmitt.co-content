@@ -2,6 +2,7 @@
 Title: Howto Blog
 Description: My workflow and how this site works
 Date: 2013/12/23
+Updated: 2014/02/07
 Author: Philipp Schmitt
 Tags: blog,github,hosting
 */
@@ -10,7 +11,7 @@ Don't get confused by the buzzy title, this post isn't about SEO or anything rel
 
 ## The backend
 
-[Pico](http://pico.dev7studios.com "Pico's homepage") is a simple, flat content-management system. "Y U no use wordpress?" you may ask, well... Wordpress relies on a database engine (mysql/mariadb, sqlite etc.) and since there is no GitHub-equivalent that does DB-Versioning it doesn't fit my needs.
+[Phile](http://philecms.github.io/Phile/ "Phile's homepage") is a simple, flat content-management system based on [Pico](http://pico.dev7studios.com "Pico's homepage"). "Y U no use wordpress?" you may ask, well... Wordpress relies on a database engine (mysql/mariadb, sqlite etc.) and since there is no GitHub-equivalent that does DB-Versioning it doesn't fit my needs.
 Performance may be a disadvantage but since I do not intend to host thousands of posts here it isn't a real problem for me (but this may change - stay tuned).
 [Twig templates](http://twig.sensiolabs.org/ "Twig's homepage") are easy to dig in too.
 
