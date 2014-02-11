@@ -1,8 +1,7 @@
 /*
 Title: Apache subdomains 
 Description: Apache subdomains setup 
-Date: 2013/11/12
-Original Date: 2013/11/11
+Date: 2013/11/11
 Author: Philipp Schmitt
 Tags: apache,virtualhost
 */
