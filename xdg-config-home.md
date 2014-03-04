@@ -43,8 +43,14 @@ Source: [Vim respect XDG](http://tlvince.com/vim-respect-xdg "Vim respect XDG by
 Vimperator is a great Firefox addon (the very best imho) but so as the previous applications, it's config file is **misplaced** by default. Once again, a few `exports` will solve this:
 
     export VIMPERATOR_RUNTIME="$XDG_CONFIG_HOME/vimperator"
-    export VIMPERATOR_INIT=":source $VIMPERATOR_RUNTIME/vimperatorrc"  
+    export VIMPERATOR_INIT=":source $VIMPERATOR_RUNTIME/vimperatorrc"
 
+### Git
+
+Git's trivial, by default it will write its config to `$HOME/.gitconfig`, but if `$XDG_CONFIG_HOME/git/config` exists it will use the latter instead. So just move your config:
+
+    mkdir -p $XDG_CONFIG_HOME/git
+    mv ~/.gitconfig !$/config
 
 ## Some symlinks remain
 
