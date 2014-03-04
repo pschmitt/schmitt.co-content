@@ -2,6 +2,7 @@
 Title: Move your config files to $XDG_CONFIG_HOME
 Description: A collection of short howtos on how to move most of your config files to $XDG_CONFIG_HOME
 Date: 2014/02/12
+Updated: 2014/03/04
 Author: Philipp Schmitt
 Tags: zsh,vim,firefox,vimperator,xdg,config
 */
@@ -51,6 +52,20 @@ Git's trivial, by default it will write its config to `$HOME/.gitconfig`, but if
 
     mkdir -p $XDG_CONFIG_HOME/git
     mv ~/.gitconfig !$/config
+
+### rxvt-unicode-daemon
+
+urxvtd has an environment variable (which defaults to `$HOME/.urxvt`):
+
+    export RXVT_SOCKET=$XDG_DATA_HOME/urxvt/urxvt-$HOST
+
+**Note:** urxvtd won't create this directory by its own, so you'll have to `mkdir $RXVT_SOCKET:h`
+
+### mplayer
+
+Yet _another_ environment variable:
+
+    export MPLAYER_HOME=$XDG_CONFIG_HOME/mplayer
 
 ## Some symlinks remain
 
