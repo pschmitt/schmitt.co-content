@@ -2,7 +2,7 @@
 Title: Move your config files to $XDG_CONFIG_HOME
 Description: A collection of short howtos on how to move most of your config files to $XDG_CONFIG_HOME
 Date: 2014/02/12
-Updated: 2014/03/04
+Updated: 2014/04/11
 Author: Philipp Schmitt
 Tags: zsh,vim,firefox,vimperator,xdg,config
 */
@@ -69,7 +69,7 @@ Yet _another_ environment variable:
 
 ## Some symlinks remain
 
-Legacy, legacy... Screw legacy. Some programs aren't that easy to configure. For example there's mutt, firefox, ncmpcpp, wireshark, mplayer, xmonad, gimp... It's 2014 and we, linux users, haven't any **real** standard config directory. OSX solved the problem by just forbidding any program to write anywhere else, but that's not how we roll... I mean, just check your `$HOME` directory. How clamped is yours?! Sure there a few projects like [libetc](http://ordiluc.net/fs/libetc/ "libetc") that aim to solve this, but wouldn't it be a better world if every Linux developer would embrace `$XDG_CONFIG_HOME`?
+Legacy, legacy... Screw legacy. Some programs aren't that easy to configure. For example there's mutt, firefox, ncmpcpp, wireshark, mplayer, xmonad, gimp... It's 2014 and we, linux users, haven't any **real** standard config directory. OSX solved the problem by just forbidding any program to write anywhere else, but that's not how we roll... I mean, just check your `$HOME` directory. How clamped is yours?! Sure there are a few projects like [libetc](http://ordiluc.net/fs/libetc/ "libetc") that aim to solve this, but wouldn't it be a better world if every Linux developer would embrace `$XDG_CONFIG_HOME`?
 
 
 _PS: If you know a way to move an app's config files to `$XDG_CONFIG_HOME` that I didn't mention, please let me know in the comments - I'll update this post._
