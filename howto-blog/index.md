@@ -43,5 +43,5 @@ If you don't plan on pseudo-hosting your website on GitHub like I do, you should
 
 It's <del>2013</del> 2014, so how do I blog from my smartphone?
 
-* [SGit](https://play.google.com/store/apps/details?id=me.sheimi.sgit "Play Store - SGit") 
+* [SGit](https://play.google.com/store/apps/details?id=me.sheimi.sgit "Play Store - SGit")
 * [Vim Touch](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch "Play Store - Vim Touch")
