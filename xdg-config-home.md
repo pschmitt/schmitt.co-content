@@ -2,7 +2,7 @@
 Title: Move your config files to $XDG_CONFIG_HOME
 Description: A collection of short howtos on how to move most of your config files to $XDG_CONFIG_HOME
 Date: 2014/02/12
-Updated: 2014/04/11
+Updated: 2014/05/23
 Author: Philipp Schmitt
 Tags: zsh,vim,firefox,vimperator,xdg,config
 */
@@ -45,6 +45,13 @@ Vimperator is a great Firefox addon (the very best imho) but so as the previous 
 
     export VIMPERATOR_RUNTIME="$XDG_CONFIG_HOME/vimperator"
     export VIMPERATOR_INIT=":source $VIMPERATOR_RUNTIME/vimperatorrc"
+
+### Pentadactyl
+
+It's pretty much the same procedure as for [Vimperator](#toc_head5), only that the environment variables have other names:
+
+    export PENTADACTYL_RUNTIME="$XDG_CONFIG_HOME/pentadactyl"
+    export PENTADACTYL_INIT=":source $PENTADACTYL_RUNTIME/pentadactylrc"
 
 ### Git
 
