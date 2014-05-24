@@ -48,7 +48,7 @@ Vimperator is a great Firefox addon (the very best imho) but so as the previous 
 
 ### Pentadactyl
 
-It's pretty much the same procedure as for [Vimperator](#toc_head5), only that the environment variables have other names:
+It's pretty much the same procedure as for [Vimperator](#vimperator), only that the environment variables have other names:
 
     export PENTADACTYL_RUNTIME="$XDG_CONFIG_HOME/pentadactyl"
     export PENTADACTYL_INIT=":source $PENTADACTYL_RUNTIME/pentadactylrc"
